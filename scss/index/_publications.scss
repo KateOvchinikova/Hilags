@@ -1,0 +1,178 @@
+.publications {
+  position: relative;
+  background: $bg;
+  padding: 20px 20px 40px 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 30px 40px 30px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 40px 59px 0 59px;
+    height: 872px;
+    overflow: hidden;
+  }
+}
+.publications-paragraph {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: $button-regular;
+}
+
+.card-description {
+  @media screen and (max-width: 639px) {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0, 2s ease-out;
+  }
+}
+
+.card-list-grid {
+  @extend %list;
+  display: grid;
+  @media screen and (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "article-one  article-two article-four"
+      "article-three article-five article-six";
+    gap: 40px;
+  }
+}
+
+.card-item-grid:nth-child(n + 4) {
+  @media screen and (max-width: 639px) {
+    display: none;
+  }
+}
+.card-item-grid:nth-child(n + 5) {
+  @media screen and (min-width: 640px) and (max-width: 1023px) {
+    display: none;
+  }
+}
+.card-item-grid.is-visible {
+  display: block;
+}
+.article-one {
+  @media screen and (min-width: 1024px) {
+    grid-area: article-one;
+  }
+}
+.article-two {
+  @media screen and (min-width: 1024px) {
+    grid-area: article-two;
+  }
+}
+.article-three {
+  @media screen and (min-width: 1024px) {
+    grid-area: article-three;
+    align-self: start;
+  }
+}
+.article-four {
+  @media screen and (min-width: 1024px) {
+    grid-area: article-four;
+  }
+}
+.article-five {
+  @media screen and (min-width: 1024px) {
+    grid-area: article-five;
+  }
+}
+.article-six {
+  @media screen and (min-width: 1024px) {
+    grid-area: article-six;
+  }
+}
+.card {
+  background: $white;
+  border-radius: 8px;
+}
+.card-img {
+  width: 100%;
+}
+.card-thmb {
+  padding: 20px;
+}
+
+.card-button {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: left;
+  color: $button-regular;
+}
+.card-time {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $text;
+}
+
+.card-line {
+  margin: 0 20px;
+  border: 1px solid $separator;
+  @media screen and (min-width: 768px) {
+    border: 2px solid $separator;
+  }
+}
+.card-text {
+  margin: 0;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.38;
+
+  color: $clients-9;
+}
+
+.publications-gradient {
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(245, 245, 250, 0) 0%,
+      #f5f5fa 86.5%
+    );
+  }
+}
+
+.btn-center {
+  text-align: center;
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+.show-more {
+  margin-top: 40px;
+  padding: 16px 78px;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: $white;
+
+  background: $button-regular;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+}
+.show-more :hover,
+.show-more :focus {
+  background: $button-hover;
+}

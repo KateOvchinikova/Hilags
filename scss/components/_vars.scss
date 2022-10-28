@@ -1,0 +1,67 @@
+// main
+$main: #323264;
+$main-alt: #46466e;
+$main-soft: #686887;
+
+// white
+$white: #ffffff;
+
+// icon-close
+$icon-close: #ec6f5d;
+
+// Accent
+$accent: #f0145a;
+
+// button
+$button-regular: #24a3ff;
+$button-hover: #0085ff;
+$button-active: #006ccf;
+
+// gray
+$bg: #f5f5fa;
+$bg-alt: #ededf7;
+$text: #b3b3ba;
+$separator: #e6e6f0;
+
+// bg
+$services-bg-one: #cacadb;
+$services-bg-two: #e7e7f2;
+
+//clients-bg
+$clients-1: #1c4280;
+$clients-2: #143646;
+$clients-3: #f48b30;
+$clients-4: #9e4dc3;
+$clients-5: #dcf3f9;
+$clients-6: #c71c36;
+$clients-7: #fd9339;
+$clients-8: #eaeaea;
+$clients-9: #000000;
+$clients-10: #1d4568;
+$clients-11: #282240;
+$clients-12: #e2e2e4;
+// Gradient
+$gradient: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #a54b5f 100%);
+$gradient-soft: linear-gradient(
+  42.01deg,
+  #323264 14.33%,
+  #323264 51.39%,
+  #7a425e 87.53%
+);
+$gradient-red: linear-gradient(121.42deg, #f0145a 30.65%, #693264 107.33%);
+$gradient-supersoft: linear-gradient(
+  228.57deg,
+  #323264 11.93%,
+  #323264 57.17%,
+  #643e72 87.46%
+);
+$splash-gradient: linear-gradient(
+  180deg,
+  rgba(50, 50, 100, 0) 16.67%,
+  #323264 100%
+);
+$gradient-red-text: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+
+$gradient-icon: linear-gradient(180deg, #ef8080 0%, #f0145a 100%);
+// transition
+$transition-basic: 250ms cubic-bezier(0.4, 0, 0.2, 1);

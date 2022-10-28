@@ -1,0 +1,79 @@
+.cases {
+  background-color: $bg;
+  margin-bottom: 30px;
+
+  border-radius: 12px 0px 12px 12px;
+}
+.cases:focus .cases:hover {
+  background-color: $bg-alt;
+}
+.title-cases {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $accent;
+}
+.cases-list {
+  @extend %list;
+  display: grid;
+  @media screen and (min-width: 768px) {
+    grid-template: 57px repeat(2, 1fr) / repeat(3, 1fr);
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template: 57px 150px 198px / 1fr minmax(320px, 454px) 1fr;
+  }
+}
+.cases-item {
+  padding: 20px 0 20px 20px;
+  border: 1px solid $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.cases-item-1 {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+.cases-item-2 {
+  @media screen and (min-width: 1200px) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+  }
+}
+.cases-item-3 {
+  @media screen and (min-width: 1200px) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+  }
+}
+.cases-item-4 {
+}
+.cases-description {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "TT Norms";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  color: $main-soft;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+.cases-company {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.44;
+
+  color: $text;
+}

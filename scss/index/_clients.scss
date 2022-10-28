@@ -1,0 +1,168 @@
+.clients-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: $main;
+}
+.clients-list {
+  @extend %list;
+  display: grid;
+  grid-template: repeat(6, 90px) / 1fr 1fr;
+  @media screen and (min-width: 768px) {
+    grid-template: repeat(4, 105px) / repeat(3, 1fr);
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template: repeat(3, 120px) / repeat(4, 1fr);
+    grid-template-areas:
+      "hillel WannaBiz tapgerine 3dLook"
+      "orangear adtelligent clickky ecoleasing"
+      "infratek Citypark art-print Ultimatecard";
+  }
+}
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-item-1 {
+  background-color: $clients-1;
+  padding: 28px 15px;
+  @media screen and (min-width: 1200px) {
+    grid-area: hillel;
+  }
+}
+
+.clients-item-2 {
+  background-color: $clients-2;
+  padding: 32px 9px;
+  @media screen and (min-width: 1200px) {
+    grid-area: WannaBiz;
+  }
+}
+.clients-item-3 {
+  background-color: $clients-3;
+  padding: 25px 14px;
+  @media screen and (min-width: 1200px) {
+    grid-area: tapgerine;
+  }
+}
+.clients-item-4 {
+  background-color: $clients-4;
+  padding: 28px 20px;
+  @media screen and (min-width: 1200px) {
+    grid-area: 3dLook;
+  }
+}
+.clients-item-5 {
+  background-color: $clients-5;
+  @media screen and (min-width: 1200px) {
+    grid-area: ecoleasing;
+  }
+}
+.clients-item-6 {
+  background-color: $clients-6;
+  @media screen and (min-width: 1200px) {
+    grid-area: clickky;
+  }
+}
+.clients-item-7 {
+  background-color: $clients-7;
+  @media screen and (min-width: 1200px) {
+    grid-area: orangear;
+  }
+}
+.clients-item-8 {
+  background-color: $clients-8;
+  @media screen and (min-width: 1200px) {
+    grid-area: infratek;
+  }
+}
+.clients-item-9 {
+  background-color: $clients-9;
+  @media screen and (min-width: 1200px) {
+    grid-area: Ultimatecard;
+  }
+}
+.clients-item-10 {
+  background-color: $clients-10;
+  @media screen and (min-width: 1200px) {
+    grid-area: art-print;
+  }
+}
+.clients-item-11 {
+  background-color: $clients-11;
+  @media screen and (min-width: 1200px) {
+    grid-area: Citypark;
+  }
+}
+.clients-item-12 {
+  background-color: $clients-12;
+  @media screen and (min-width: 1200px) {
+    grid-area: adtelligent;
+  }
+}
+.clients-1 {
+  @media screen and (min-width: 1200px) {
+    width: 217px;
+  }
+}
+.clients-2 {
+  @media screen and (min-width: 1200px) {
+    width: 199px;
+  }
+}
+.clients-3 {
+  @media screen and (min-width: 1200px) {
+    width: 179px;
+  }
+}
+.clients-4 {
+  @media screen and (min-width: 1200px) {
+    width: 180px;
+  }
+}
+.clients-5 {
+  @media screen and (min-width: 1200px) {
+    width: 146px;
+  }
+}
+.clients-6 {
+  @media screen and (min-width: 1200px) {
+    width: 135px;
+  }
+}
+.clients-7 {
+  @media screen and (min-width: 1200px) {
+    width: 174px;
+  }
+}
+.clients-8 {
+  @media screen and (min-width: 1200px) {
+    width: 182px;
+  }
+}
+.clients-9 {
+  @media screen and (min-width: 1200px) {
+    width: 152px;
+  }
+}
+.clients-10 {
+  @media screen and (min-width: 1200px) {
+    width: 189px;
+  }
+}
+.clients-11 {
+  @media screen and (min-width: 1200px) {
+    width: 181px;
+  }
+}
+.clients-12 {
+  @media screen and (min-width: 1200px) {
+    width: 187px;
+  }
+}

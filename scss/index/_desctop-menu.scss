@@ -1,0 +1,102 @@
+.desctop-menu {
+  display: none;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.menu {
+}
+.logo {
+  width: 100px;
+  @media screen and (min-width: 1200px) {
+    width: 155px;
+    height: 62px;
+  }
+}
+.top-navigation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.desctop-language {
+  margin-right: 20px;
+}
+
+.button-lang-desctop {
+  color: $white;
+}
+.header-address {
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $white;
+}
+.telephone-desctop {
+  position: relative;
+  @extend %links;
+  margin-right: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: $white;
+  &::after,
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 50%;
+
+    width: 6px;
+    height: 6px;
+    transform: translateY(-50%);
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &::after {
+    right: -14px;
+  }
+  &::before {
+    left: -14px;
+  }
+}
+.header-icon_links {
+  @extend %links;
+  display: inline-block;
+  margin-left: 10px;
+}
+.header-icon {
+  width: 24px;
+  height: 24px;
+}
+.header-icon_facebook {
+  fill: $white;
+  &:hover {
+    fill: $button-regular;
+  }
+}
+.nav-menu-list {
+  @extend %list;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-menu-item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+.nav-menu-links {
+  @extend %links;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: right;
+
+  color: $white;
+}

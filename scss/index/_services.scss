@@ -1,0 +1,96 @@
+.services {
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+.services-paragraph {
+  font-size: 14px;
+  line-height: 1.2;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: $white;
+  opacity: 0.5;
+  &::after {
+    content: "";
+    display: block;
+    background-image: url(../../img/Liink-arrow.svg);
+  }
+}
+.services-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.18;
+  color: white;
+  background-image: $gradient-red-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.services-list {
+  @extend %list;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.services-item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 20px) / 2);
+    margin-right: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 6 * 20px) / 3);
+    margin-right: 40px;
+  }
+}
+.serviced-icon {
+  margin-right: 10px;
+  min-width: 64px;
+  height: 64px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 18px;
+  fill: #f0145a;
+}
+.services-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.services-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  color: $button-regular;
+}
+.services-text {
+  font-size: 16px;
+  line-height: 1.38;
+  color: $white;
+  margin: 0;
+}
+.services-bg-one {
+  height: 10px;
+  margin: 0 20px;
+  background: $services-bg-one;
+  border-radius: 0px 0px 12px 12px;
+}
+.services-bg-two {
+  height: 10px;
+  margin: 0 40px 20px 40px;
+  background: $services-bg-two;
+  border-radius: 0px 0px 12px 12px;
+}
