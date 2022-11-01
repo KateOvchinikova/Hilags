@@ -26,8 +26,8 @@
   font-style: normal;
 }
 
-@import "./components/_components";
 @import "./components/vars";
+@import "./components/_components";
 @import "./components/header-mobile";
 @import "./components/owl-carousel.min";
 @import "./components/switcher";
@@ -45,3 +45,4 @@
 @import "./components/footer";
 // page about us
 @import "./about-us/header";
+@import "./about-us/advantages";

@@ -36,3 +36,29 @@ h6 {
     padding: 0 60px;
   }
 }
+.title {
+  font-size: 32px;
+  line-height: 1.18;
+  background: $gradient-red-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  @media screen and (min-width: 768px) {
+    font-size: 38px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 42px;
+    line-height: 1.19;
+  }
+}
+.text {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+
+  color: $clients-9;
+  @media screen and (min-width: 768px) {
+    font-size: 21px;
+  }
+}
