@@ -1,16 +1,17 @@
 .splash {
   padding-top: 138px;
   text-align: center;
-  background-image: url(../../img/Symbol-Long-leg.svg);
+  background-image: url(../../img/p-symbol.svg);
   background-repeat: no-repeat;
-  background-position: right -40px top 100px;
+  background-position: left calc(50% + 11px) top calc(50% + 87px);
 
   background-size: 430px;
-  @media screen and (min-width: 375px) {
-    background-position: right -10px top 100px;
-  }
-  @media screen and (min-width: 375px) {
-    background-position: right 50% top 100px;
+  @media screen and (min-width: 768px) {
+    background-image: url("../../img/p-symbol.svg"),
+      url("../../img/pattern.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left calc(50% + 8px) top calc(50% + 88px),
+      left calc(50% + 6px) top calc(50% + 20px);
   }
 }
 .splash-text {
@@ -49,8 +50,4 @@
   border: 1px solid $text;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.icon-scroll {
-  fill: $white;
 }

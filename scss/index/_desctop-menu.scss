@@ -1,19 +1,19 @@
 .desctop-menu {
   display: none;
   @media screen and (min-width: 768px) {
-    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 34px;
   }
-}
-.menu {
+  @media screen and (min-width: 1440px) {
+    padding-top: 50px;
+  }
 }
 .logo {
   width: 100px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1024px) {
     width: 155px;
-    height: 62px;
   }
 }
 .top-navigation {
@@ -25,7 +25,7 @@
   margin-right: 20px;
 }
 
-.button-lang-desctop {
+.button-lang-desctop-index {
   color: $white;
 }
 .header-address {
@@ -34,6 +34,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+}
+.header-address-index {
   color: $white;
 }
 .telephone-desctop {
@@ -44,6 +46,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+}
+.telephone-desctop-index {
   color: $white;
   &::after,
   &::before {
@@ -75,7 +79,7 @@
   width: 24px;
   height: 24px;
 }
-.header-icon_facebook {
+.header-icon_facebook-index {
   fill: $white;
   &:hover {
     fill: $button-regular;
@@ -97,6 +101,12 @@
   font-size: 18px;
   line-height: 1.16;
   text-align: right;
-
+  transition: color $transition-basic;
+}
+.nav-menu-links-index {
   color: $white;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }

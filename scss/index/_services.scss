@@ -2,7 +2,8 @@
   padding-top: 45px;
   padding-bottom: 10px;
 }
-.services-paragraph {
+.services-link {
+  @extend %links;
   font-size: 14px;
   line-height: 1.2;
 

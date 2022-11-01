@@ -1,0 +1,144 @@
+.icon-menu-about {
+  fill: $main;
+}
+.current-mobile {
+  color: $accent;
+}
+
+.header-mobile-logo {
+  display: flex;
+}
+.logo-splash {
+  width: 11px;
+  height: 24px;
+  @media screen and (min-width: 768px) {
+    width: 21.07px;
+    height: 46.84px;
+  }
+}
+.logo-title {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.15;
+
+  color: $main;
+  @media screen and (min-width: 768px) {
+    font-size: 38px;
+    line-height: 1.18;
+  }
+}
+.logo-splash-p {
+  width: 21.16px;
+  height: 23.95px;
+  @media screen and (min-width: 768px) {
+    width: 41.31px;
+    height: 46.9px;
+  }
+}
+
+.button-lang-desctop-page,
+.header-address-page {
+  color: $text;
+}
+.current-lang {
+  color: $white;
+}
+.telephone-desctop-page {
+  color: $text;
+  &::after,
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 50%;
+
+    width: 6px;
+    height: 6px;
+    transform: translateY(-50%);
+    background-color: $text;
+    border-radius: 50%;
+  }
+
+  &::after {
+    right: -14px;
+  }
+  &::before {
+    left: -14px;
+  }
+}
+.header-icon_facebook-page {
+  fill: $text;
+  &:hover {
+    fill: $button-regular;
+  }
+}
+.nav-menu-links-page {
+  color: $button-regular;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+.current {
+  color: $accent;
+  border-bottom: solid 2px $accent;
+}
+.top-navigation-page {
+  justify-content: center;
+  @media screen and (min-width: 1024px) {
+    justify-content: flex-end;
+  }
+}
+.desctop-menu-page {
+  display: none;
+  @media screen and (min-width: 768px) {
+    padding-top: 34px;
+    display: block;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.logo-page {
+  @media screen and (min-width: 678px) {
+    width: 155px;
+  }
+}
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.decstop-menu-logo {
+  display: flex;
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+.nav-menu-list-page {
+  @extend %list;
+  display: flex;
+}
+.decstop-menu-logo-1440 {
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}
+.desctop-menu-page-1440 {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

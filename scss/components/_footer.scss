@@ -1,6 +1,11 @@
 .footer {
   background-color: $bg;
   text-align: center;
+  transition: background-color $transition-basic;
+  &:hover,
+  &:focus {
+    background-color: $bg-alt;
+  }
   @media screen and (max-width: 767px) {
     padding-bottom: 118px;
   }
@@ -86,13 +91,15 @@
 
 .links {
   @extend %links;
+}
+.footer-text,
+.footer-mail {
   transition: color $transition-basic;
   &:hover,
   &:focus {
     color: $accent;
   }
 }
-
 .footer-text {
   font-style: normal;
   font-weight: 700;

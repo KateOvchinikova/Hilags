@@ -29,14 +29,19 @@
 @import "./components/_components";
 @import "./components/vars";
 @import "./components/header-mobile";
-
+@import "./components/owl-carousel.min";
+@import "./components/switcher";
 // page-index
 @import "./index/topbar";
 @import "./index/desctop-menu";
 @import "./index/section-splash";
 @import "./index/experience";
 @import "./index/services";
+
+@import "./index/owl-carousel";
 @import "./index/cases";
 @import "./index/clients";
 @import "./index/publications";
 @import "./components/footer";
+// page about us
+@import "./about-us/header";

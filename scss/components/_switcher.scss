@@ -1,0 +1,33 @@
+.switcher {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.switcher-item {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $button-regular;
+  opacity: 0.2;
+  margin-right: 14px;
+}
+
+.switcher-item:hover {
+  opacity: 0.6;
+}
+
+.switcher-item:last-child {
+  margin-right: 0;
+}
+
+.switcher-item-active {
+  background-color: $button-regular;
+  opacity: 1;
+}
+
+.switcher-item-active:hover {
+  opacity: 1;
+}

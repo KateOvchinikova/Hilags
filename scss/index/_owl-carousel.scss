@@ -1,0 +1,157 @@
+.team {
+  margin-bottom: 30px;
+}
+.owl-carousel {
+  display: flex;
+}
+.owl-carousel-foto {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 350px;
+    flex-shrink: 0;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 413px;
+  }
+}
+.owl-carousel-fotos {
+  width: 100%;
+}
+.team-card {
+  border-radius: 12px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.team-card-desctop {
+  padding: 20px;
+  background: $bg-alt;
+  display: flex;
+  flex-direction: column;
+}
+.team-link {
+  @extend %links;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  color: $button-regular;
+}
+
+.team-heading {
+  font-size: 32px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+  background-image: $gradient-red-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  @media screen and (min-width: 1024px) {
+    font-style: 42px;
+  }
+}
+
+.team-footer {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.team-member-photo {
+  width: 60px;
+  height: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.team-member-ph {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.team-member-description {
+  margin-left: 10px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.team-member-name {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.16;
+  color: $text;
+}
+
+.team-member-occupation {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.37;
+  color: $text;
+}
+
+.team-switcher {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.team-switcher-item {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--clr-alice-blue);
+  margin-right: 14px;
+}
+
+.team-switcher-item:last-child {
+  margin-right: 0;
+}
+
+.team-switcher-item-active {
+  background-color: $button-regular;
+}
+
+/* Ниже мы переопределяем родные стили самой карусели */
+/* Название классов карусели можно найти в инспекторе Chrome DevTools */
+
+.owl-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $button-regular !important;
+  opacity: 0.2;
+  margin-right: 14px;
+}
+
+.owl-dot:last-child {
+  margin-right: 0;
+}
+
+.owl-dot.active {
+  background-color: $button-regular;
+  opacity: 1;
+}
+
+.owl-dot:hover {
+  opacity: 0.6;
+}
+
+.owl-dots {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.owl-dot.active:hover {
+  opacity: 1;
+}
