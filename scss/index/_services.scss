@@ -12,11 +12,6 @@
 
   color: $white;
   opacity: 0.5;
-  &::after {
-    content: "";
-    display: block;
-    background-image: url(../../img/Liink-arrow.svg);
-  }
 }
 .services-title {
   margin-bottom: 20px;
@@ -69,6 +64,7 @@
   }
 }
 .services-name {
+  @extend %links;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;

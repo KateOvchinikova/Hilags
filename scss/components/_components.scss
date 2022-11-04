@@ -62,3 +62,28 @@ h6 {
     font-size: 21px;
   }
 }
+.current-service {
+  border-bottom: solid 2px $white;
+}
+.current {
+  color: $accent;
+  border-bottom: solid 2px $accent;
+}
+.button {
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: $white;
+
+  background: $button-regular;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  &:hover {
+    background-color: $button-hover;
+  }
+  &:focus {
+    background-color: $button-active;
+  }
+}

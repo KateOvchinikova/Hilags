@@ -91,10 +91,7 @@
     color: $accent;
   }
 }
-.current {
-  color: $accent;
-  border-bottom: solid 2px $accent;
-}
+
 .top-navigation-page {
   justify-content: center;
   @media screen and (min-width: 1024px) {

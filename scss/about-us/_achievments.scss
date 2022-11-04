@@ -1,0 +1,65 @@
+.achievments {
+  padding: 28px 10px 30px 10px;
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: $bg;
+  border-radius: 12px 12px 0px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: 28px 30px 30px 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 28px 40px 30px 40px;
+  }
+}
+.owl-carousel {
+  @extend %list;
+}
+.owl-carousel-item {
+  margin: 0 10px;
+  height: 57px;
+  background: $white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 0 20px;
+    height: 109px;
+  }
+}
+.acievments-item-foto1 {
+  width: 41.87px;
+  height: 31.4px;
+  @media screen and (min-width: 1024px) {
+    width: 80px;
+    height: 60px;
+  }
+}
+.acievments-item-foto2 {
+  width: 83.15px;
+  height: 31.38px;
+  @media screen and (min-width: 1024px) {
+    width: 159px;
+    height: 60px;
+  }
+}
+.acievments-item-foto3 {
+  width: 97.5px;
+  height: 30px;
+  @media screen and (min-width: 1024px) {
+    width: 195px;
+    height: 60px;
+  }
+}
+.acievments-item-foto4 {
+  width: 83px;
+  height: 30px;
+  @media screen and (min-width: 1024px) {
+    width: 166px;
+    height: 60px;
+  }
+}

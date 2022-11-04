@@ -1,4 +1,6 @@
 .publications {
+  max-width: 1440px;
+  margin: 0 auto;
   position: relative;
   background: $bg;
   padding: 20px 20px 40px 20px;
@@ -161,16 +163,6 @@
 .show-more {
   margin-top: 40px;
   padding: 16px 78px;
-  font-size: 14px;
-  line-height: 1.2;
-
-  color: $white;
-
-  background: $button-regular;
-  border: 1px solid transparent;
-  cursor: pointer;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  border-radius: 12px;
 }
 .show-more :hover,
 .show-more :focus {
