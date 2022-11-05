@@ -170,14 +170,61 @@
                     папери —
                     юридична робота відволікає вас
                     від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста.</p>
+
                 <p class="text text-info"> До того ж, з часом робота стане однотипною і нецікавою для штатного
                     юриста. А
                     ще
                     ми добре
                     знаємо, як важко в Україні
                     знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</p>
-                <div class="button button-info">Безкоштовна консультація</div>
+                <button data-modal-open type="button" class="button button-info">Безкоштовна консультація</button>
             </div>
+            <div class="services-info-bottom">
+                <div class="services-info-line"></div>
+                <h2 class="services-info-title">Послуги цього напрямку:</h2>
+                <div class="info-container">
+                    <ul class="services-info-list">
+                        <li class="services-info-item"><span class="text text-info">супровід інвестиційних проектів з
+                                розвитку портової інфраструктури;</span> </li>
+                        <li class="services-info-item"> <span class="text text-info">паспортизація ГТС, внесення
+                                інформації
+                                про них в обов'язкові бази даних і
+                                реєстри;</span></li>
+                        <li class="services-info-item"><span class="text text-info">оформлення дозвільної документації
+                                для
+                                будівництва портових терміналів;</span>
+                        </li>
+                        <li class="services-info-item"><span class="text text-info">оформлення дозвільної та іншої
+                                обов'язкової документації, необхідної для здійснення діяльності в
+                                порту (дозвіл на
+                                викиди, висновок по ОВНС, РТК і ін.);</span>
+                        </li>
+                    </ul>
+                    <ul class="services-info-list services-info-list__last">
+                        <li class="services-info-item"><span class="text text-info">супровід процедур, пов'язаних з
+                                орендою
+                                державного майна в порту;</span> </li>
+                        <li class="services-info-item"><span class="text text-info">супровід процедур, пов'язаних з
+                                орендою
+                                державного майна в порту;
+                                супровід процедур, пов'язаних з підтвердженням статусу портового оператора, морського
+                                агента,
+                                лінії
+                                закордонного
+                                плавання;</span>
+                        </li>
+                        <li class="services-info-item"><span class="text text-info">супровід процедур, пов'язаних з
+                                включенням компанії в межі порту;
+                                оскарження дій, пов'язаних з незаконним нав'язуванням послуг в порту
+                                компаніями-монополістами.</span> </li>
+                        <li class="services-info-item"><span class="text text-info">оскарження дій, пов'язаних з
+                                незаконним
+                                нав'язуванням послуг в порту компаніями-монополістами.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
 
 
         </section>
@@ -384,8 +431,38 @@
 
 
     </footer>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+
+
+            <form class="modal-form js-speaker-form">
+                <div class="form-top">
+                    <h1 class="modal-title">Ми хотіли б Вам допомогти</h1>
+                    <svg data-modal-close class="menu-button__close" width="18" height="18">
+                        <use class="icon-close" href="../img/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </div>
+
+                <input class="input text" type='text' name="name" placeholder="Iм’я">
+                <textarea class="input text" class="modal-textarea modal-text" name="coment" rows="6"
+                    placeholder="Повідомлення"></textarea>
+                <p class="form-question">Як вам відповісти?</p>
+                <input class="input input-text text" type='tel' name="tel" placeholder="Номер телефона">
+                <input class="input text" type='email' name="email" placeholder="Чи email">
+                <div class="modal-btn">
+                    <button type="submit" class="button modal-button">Надіслати запит</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
     <script src="../js/jquery.min.js"></script>
     <script src="../js/mobile-menu.js"></script>
+    <script src="../js/modal.js"></script>
     <script src="../js/show-more.js"></script>
 </body>
 

@@ -36,7 +36,20 @@ h6 {
     padding: 0 60px;
   }
 }
+.main-container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1094px;
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 60px;
+  }
+}
+
 .title {
+  font-weight: 700;
   font-size: 32px;
   line-height: 1.18;
   background: $gradient-red-text;
@@ -65,10 +78,7 @@ h6 {
 .current-service {
   border-bottom: solid 2px $white;
 }
-.current {
-  color: $accent;
-  border-bottom: solid 2px $accent;
-}
+
 .button {
   font-size: 14px;
   line-height: 1.2;

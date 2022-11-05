@@ -1,0 +1,95 @@
+.person-container {
+  margin-bottom: 22px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 62px;
+  }
+}
+.person-page {
+  max-width: 413px;
+  border-radius: 12px;
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-right: 41px;
+  }
+}
+.person-description {
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+}
+.person-contact {
+  @extend %list;
+
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.person-line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 4px;
+  width: 100%;
+  background-color: $separator;
+  @media screen and(min-width:768px) {
+    margin-bottom: 40px;
+  }
+}
+.person-contact-item {
+  margin-right: 26px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.person-contacts {
+  @extend %links;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: $button-regular;
+}
+.person-contact-items {
+  position: relative;
+  &::after,
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 50%;
+
+    width: 6px;
+    height: 6px;
+    transform: translateY(-50%);
+    background-color: $separator;
+    border-radius: 50%;
+  }
+
+  &::after {
+    right: -14px;
+  }
+  &::before {
+    left: -14px;
+  }
+}
+.person-text {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+
+  color: $clients-9;
+}
+.person-title {
+  font-size: 14px;
+  line-height: 1.2;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: $main;
+}

@@ -1,0 +1,73 @@
+.title-team {
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 864px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 80px;
+  }
+}
+.team-list {
+  @extend %list;
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 40px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 60px;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  }
+}
+.team-item {
+  @media screen and (max-width: 767px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: end;
+  }
+}
+.team-item-foto {
+  border-radius: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+.team-list-container {
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+.team-name {
+  font-size: 18px;
+  line-height: 1.16;
+
+  color: $main;
+}
+.team-item-link {
+  @extend %links;
+  margin-top: 10px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: $bg;
+  color: $button-regular;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
