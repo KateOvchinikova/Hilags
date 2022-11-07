@@ -63,9 +63,20 @@
   display: inline-block;
   width: 100%;
   padding: 11px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+
+  color: $clients-9;
   background: $white;
   border: 1px solid transparent;
   border-radius: 8px;
+  outline: transparent;
+  transition: border-color $transition-basic;
+  &:hover,
+  &:focus {
+    border-color: $accent;
+  }
   &::placeholder {
     font-size: 18px;
     line-height: 1.4;

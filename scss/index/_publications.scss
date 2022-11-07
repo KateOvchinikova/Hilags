@@ -14,7 +14,11 @@
     overflow: hidden;
   }
 }
+.overflow-container-pub {
+  position: relative;
+}
 .publications-paragraph {
+  @extend %links;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -23,75 +27,31 @@
 
   color: $button-regular;
 }
-
 .card-description {
-  @media screen and (max-width: 639px) {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0, 2s ease-out;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
-
-.card-list-grid {
-  @extend %list;
-  display: grid;
-  @media screen and (min-width: 640px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+.masonry-item {
+  margin-bottom: 20px;
   @media screen and (min-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "article-one  article-two article-four"
-      "article-three article-five article-six";
-    gap: 40px;
+    margin-bottom: 40px;
   }
 }
-
-.card-item-grid:nth-child(n + 4) {
+.masonry-item:nth-child(n + 4) {
   @media screen and (max-width: 639px) {
     display: none;
   }
 }
-.card-item-grid:nth-child(n + 5) {
+.masonry-item:nth-child(n + 5) {
   @media screen and (min-width: 640px) and (max-width: 1023px) {
     display: none;
   }
 }
-.card-item-grid.is-visible {
+.masonry-item.is-visible {
   display: block;
 }
-.article-one {
-  @media screen and (min-width: 1024px) {
-    grid-area: article-one;
-  }
-}
-.article-two {
-  @media screen and (min-width: 1024px) {
-    grid-area: article-two;
-  }
-}
-.article-three {
-  @media screen and (min-width: 1024px) {
-    grid-area: article-three;
-    align-self: start;
-  }
-}
-.article-four {
-  @media screen and (min-width: 1024px) {
-    grid-area: article-four;
-  }
-}
-.article-five {
-  @media screen and (min-width: 1024px) {
-    grid-area: article-five;
-  }
-}
-.article-six {
-  @media screen and (min-width: 1024px) {
-    grid-area: article-six;
-  }
-}
+
 .card {
   background: $white;
   border-radius: 8px;
@@ -104,8 +64,9 @@
 }
 
 .card-button {
-  padding: 0;
-  margin: 0 0 10px 0;
+  @extend %links;
+  display: inline-block;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.16;
@@ -113,6 +74,8 @@
   color: $button-regular;
 }
 .card-time {
+  display: block;
+  margin-bottom: 20px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 1px;

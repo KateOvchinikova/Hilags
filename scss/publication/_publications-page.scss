@@ -1,0 +1,140 @@
+.overflow-container {
+  padding: 20px;
+  background-color: $bg;
+  @media screen and (min-width: 768px) {
+    padding: 40px;
+  }
+}
+
+.masonry-container {
+  @extend %list;
+  columns: 1;
+
+  @media screen and (min-width: 640px) {
+    column-count: 2;
+    column-gap: 20px;
+  }
+  @media screen and (min-width: 1024px) {
+    column-count: 3;
+    column-gap: 40px;
+  }
+}
+
+.masonry-items {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 40px;
+  }
+}
+.masonry-items:nth-child(n + 6) {
+  @media screen and (max-width: 639px) {
+    display: none;
+  }
+}
+.masonry-item-image {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.masonry-item-heading {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 0 10px 0;
+}
+
+.masonry-item-heading a {
+  color: #24a3ff;
+  text-decoration: none;
+}
+
+.masonry-item-text {
+  margin: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  border-top: solid 4px #e6e6f0;
+}
+
+// publications-pages
+.post-heading {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 1.18;
+
+  color: $main;
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+  }
+}
+.paragraph-line {
+  padding-top: 20px;
+  border-top: solid 4px $separator;
+}
+.post-heading-list {
+  font-size: 18px;
+  line-height: 1.16;
+
+  color: $main-alt;
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+  }
+}
+.post-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $accent;
+}
+
+.post-img {
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    width: 640px;
+  }
+}
+.descriptions-img {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: $text;
+}
+.paragraph-bottom-line {
+  padding-bottom: 40px;
+  border-bottom: solid 4px $separator;
+}
+.post-social {
+  margin-bottom: 40px;
+  @extend %list;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+.post-social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: $bg;
+  border-radius: 12px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.post-social-fb {
+  fill: $facebook;
+}
+.post-social-tg {
+  fill: $telegram;
+}
+.post-social-li {
+  fill: $linkedIn;
+}
+.post-title {
+  margin-bottom: 40px;
+}

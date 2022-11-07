@@ -75,6 +75,13 @@ h6 {
     font-size: 21px;
   }
 }
+.paragraph {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+
+  color: $clients-9;
+}
 .current-service {
   border-bottom: solid 2px $white;
 }

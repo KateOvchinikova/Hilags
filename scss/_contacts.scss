@@ -1,3 +1,19 @@
+.contact-desktop {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.main-container-contact {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    width: 414px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-right: 153px;
+  }
+}
 .contact-text {
   @extend %links;
   font-style: normal;
@@ -15,14 +31,16 @@
 .contact-tel {
   display: inline-block;
   color: $main-alt;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 .contact-mail {
   display: inline-block;
 
-  margin-bottom: 20px;
   color: $button-regular;
+  transition: color $transition-basic;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
 .contact-link {
   max-width: 171px;
@@ -40,4 +58,41 @@
   text-transform: uppercase;
 
   color: $button-regular;
+  transition: color $transition-basic;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+.contact-modal {
+  margin: 0 auto;
+  background-color: $bg;
+  padding: 20px;
+  max-width: 527px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 80px;
+  }
+}
+.modal-title-contact {
+  margin-bottom: 20px;
+}
+.container-map {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.map-wrap {
+  overflow: hidden;
+  padding-bottom: 41.66%;
+  position: relative;
+  height: 600px;
+}
+
+.map-wrap iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
