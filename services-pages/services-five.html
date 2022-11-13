@@ -450,27 +450,29 @@
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <div class="modal-content">
 
+                <form class="modal-form js-speaker-form">
+                    <div class="form-top">
+                        <h1 class="modal-title">Ми хотіли б Вам допомогти</h1>
+                        <svg data-modal-close class="menu-button__close" width="18" height="18">
+                            <use class="icon-close" href="../img/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </div>
 
-            <form class="modal-form js-speaker-form">
-                <div class="form-top">
-                    <h1 class="modal-title">Ми хотіли б Вам допомогти</h1>
-                    <svg data-modal-close class="menu-button__close" width="18" height="18">
-                        <use class="icon-close" href="../img/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </div>
+                    <input class="input text" type='text' name="name" placeholder="Iм’я">
+                    <textarea class="input text" class="modal-textarea modal-text" name="coment" rows="6"
+                        placeholder="Повідомлення"></textarea>
+                    <p class="form-question">Як вам відповісти?</p>
+                    <input class="input input-text text" type='tel' name="tel" placeholder="Номер телефона">
+                    <input class="input text" type='email' name="email" placeholder="Чи email">
+                    <div class="modal-btn">
+                        <button type="submit" class="button modal-button">Надіслати запит</button>
+                    </div>
 
-                <input class="input text" type='text' name="name" placeholder="Iм’я">
-                <textarea class="input text" class="modal-textarea modal-text" name="coment" rows="6"
-                    placeholder="Повідомлення"></textarea>
-                <p class="form-question">Як вам відповісти?</p>
-                <input class="input input-text text" type='tel' name="tel" placeholder="Номер телефона">
-                <input class="input text" type='email' name="email" placeholder="Чи email">
-                <div class="modal-btn">
-                    <button type="submit" class="button modal-button">Надіслати запит</button>
-                </div>
+                </form>
+            </div>
 
-            </form>
         </div>
     </div>
 
