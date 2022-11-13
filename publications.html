@@ -154,7 +154,16 @@
     </header>
     <main>
         <div class="overflow-container overflow-container-pub">
-            <ul class="masonry-container">
+
+            <div class="publications-switcher">
+                <div class="button-box">
+                    <div class="btn"></div>
+                    <button type="button" onclick="leftClick()" class="toggle-btn">новини</button>
+                    <button type="button" onclick="rightClick()" class="toggle-btn">компанія</button>
+                </div>
+
+            </div>
+            <ul class="masonry-container masonry-containers">
                 <li class="masonry-items">
                     <article class="card ">
                         <div class="card-thmb">
@@ -219,8 +228,6 @@
 
                     </article>
                 </li>
-
-
                 <li class="masonry-items">
                     <article class=" card">
                         <img class="masonry-item-image" src="./img/publication-three.jpg" alt="#">
@@ -241,7 +248,6 @@
 
                     </article>
                 </li>
-
                 <li class="masonry-items">
                     <article class=" card">
                         <img class="masonry-item-image" src="./img/publication-four.jpg" alt="#">
@@ -262,7 +268,6 @@
 
                     </article>
                 </li>
-
                 <li class="masonry-items">
                     <article class="card">
                         <img class="masonry-item-image" src="./img/publication-five.jpg" alt="#">
@@ -283,34 +288,6 @@
 
                     </article>
                 </li>
-
-
-
-
-
-
-
-                <li class="masonry-items">
-                    <article class="card">
-                        <img class="masonry-item-image" src="./img/publication-five.jpg" alt="#">
-                        <div class="card-thmb">
-                            <h2 class="masonry-item-heading">
-                                <a href="./publications-page/publication-page-new5.html">Штраф для «Корпорації добра»:
-                                    що буде з Google та іншими за порушення GDPR</a>
-                            </h2>
-                            <span class="card-time">29 вересня</span>
-                        </div>
-                        <div class="card-description">
-                            <p class="masonry-item-text">
-                                І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами Mind.ua
-                                21 січня Національна комісія із
-                                захисту даних.
-                            </p>
-                        </div>
-
-                    </article>
-                </li>
-
                 <li class="masonry-items">
                     <article class=" card">
                         <img class="masonry-item-image" src="./img/publication-four.jpg" alt="#">
@@ -346,6 +323,26 @@
                                 Наталія Кирик, керівник контент студії Wordfactory.ua По-перше, це красиво! Це аргумент
                                 номер один на користь
                                 україномовного сайту. По-друге, це ефективно. У…
+                            </p>
+                        </div>
+
+                    </article>
+                </li>
+                <li class="masonry-items">
+                    <article class="card">
+                        <img class="masonry-item-image" src="./img/publication-five.jpg" alt="#">
+                        <div class="card-thmb">
+                            <h2 class="masonry-item-heading">
+                                <a href="./publications-page/publication-page-new5.html">Штраф для «Корпорації добра»:
+                                    що буде з Google та іншими за порушення GDPR</a>
+                            </h2>
+                            <span class="card-time">29 вересня</span>
+                        </div>
+                        <div class="card-description">
+                            <p class="masonry-item-text">
+                                І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами Mind.ua
+                                21 січня Національна комісія із
+                                захисту даних.
                             </p>
                         </div>
 
@@ -414,10 +411,137 @@
 
                     </article>
 
+                </li>
+                <li class="masonry-items">
+                    <article class="card">
+                        <div class="card-thmb">
+                            <a href="../publications-page/publication-page-com-one.html" class="card-button">Валютний
+                                контроль помер, хай живе валютний
+                                контроль!</a>
+                            <span class="card-time">14 червня</span>
+                        </div>
+
+                        <div class="card-description">
+                            <p class="masonry-item-text">Експерти проводять конференції, круглі столи та іншого штибу
+                                заходи
+                                на тему
+                                «лібералізація валютного законодавства».
+                                Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="masonry-item">
+                    <article class="card ">
+                        <img srcset="../img/article-1-320.jpg  320w ../img/article-1-640.jpg 640w"
+                            src="../img/article-1-320.jpg" alt="publication" class="card-img">
+                        <div class="card-thmb">
+                            <a href="../publications-page/publication-page-com2.html" class="card-button">Equity
+                                associate</a>
+                            <span class="card-time">22 квітня</span>
+                        </div>
+
+                        <div class="card-description">
+
+                            <p class="masonry-item-text">На проектах я джун. При цьому я співвласник юридичної фірми. Як
+                                це
+                                відбулося. Перед вступом батьки мені казали, що якщо
+                                буду…</p>
+                        </div>
+
+                    </article>
+                </li>
+                <li class="masonry-items">
+                    <article class="card">
+
+                        <img srcset="../img/article-2-320.jpg  320w ../img/article-2-640.jpg 640w"
+                            src="../img/article-2-320.jpg" alt="publication" class="card-img">
+
+                        <div class="card-thmb">
+                            <a href="../publications-page/publication-page-com3.html" class="card-button">Заповіт
+                                міленіала</a>
+                            <span class="card-time">19 серпня</span>
+                        </div>
+
+                        <div class="card-description">
+
+                            <p class="masonry-item-text">Що і як передаватимуть у спадщину сучасні влогери, опініон
+                                лідери і
+                                криптомільйонери Типовий спадок українського
+                                покоління Х виглядає так: квартира у…</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="masonry-items">
+                    <article class="card">
+
+                        <img srcset="../img/article-3-320.jpg  320w ../img/article-3-640.jpg 640w"
+                            src="../img/article-3-320.jpg" alt="publication" class="card-img">
+                        <div class="card-thmb">
+                            <a href="../publications-page/publication-page-com4.html" class="card-button">Штраф для
+                                «Корпорації
+                                добра»: що буде з Google
+                                та
+                                іншими за
+                                порушення GDPR</a>
+                            <span class="card-time">29 вересня</span>
+                        </div>
+                        <div class="card-description">
+
+                            <p class="masonry-item-text">І чому стягнення у 50 млн євро може стати доленосним
+                                прецедентом За
+                                матеріалами Mind.ua 21 січня Національна комісія із
+                                захисту даних.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="masonry-items">
+                    <article class="card">
+
+                        <img srcset="../img/article-4-320.jpg  320w ../img/article-4-640.jpg 640w"
+                            src="../img/article-4-320.jpg" alt="publication" class="card-img">
+                        <div class="card-thmb">
+                            <a href="../publications-page/publication-page-com4.html" class="card-button">Закон про
+                                мови: як зробити
+                                свій сайт
+                                відповідним</a>
+                            <span class="card-time">19 серпня</span>
+                        </div>
+                        <div class="card-description">
+
+                            <p class="masonry-item-text">Наталія Кирик, керівник контент студії Wordfactory.ua По-перше,
+                                це
+                                красиво!
+                                Це аргумент номер один на користь
+                                україномовного сайту. По-друге, це ефективно.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="masonry-items">
+                    <article class="card">
+
+                        <img srcset="../img/article-5-320.jpg  320w ../img/article-5-640.jpg 640w"
+                            src="../img/article-5-320.jpg" alt="publication" class="card-img">
+                        <div class="card-thmb">
+                            <a href="../publications-page/publication-page-com5.html" class="card-button">Компенсація
+                                витрат на
+                                навчання дитини в
+                                дитячому садку
+                                та
+                                школі</a>
+                            <span class="card-time">5 Лютого 2018</span>
+                        </div>
+                        <div class="card-description">
+
+                            <p class="masonry-item-text">Про що йде мова В червні цього року Верховна Рада внесла зміни
+                                до
+                                Податкового кодексу України. Відтепер батьки, які
+                                отримують офіційну…</p>
+                        </div>
+                    </article>
                 </li>
             </ul>
-            <div class="btn-center">
-                <button type="button" class="button show-more">
+            <div class="btn-center btn-center-pub">
+                <button type="button" class="button show-more-pub">
                     Ще публікації
                 </button>
             </div>
@@ -462,7 +586,8 @@
     </footer>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/show-more.js"></script>
+    <script src="./js/switcher.js"></script>
+    <script src="./js/show-more-publication.js"></script>
 
 </body>
 

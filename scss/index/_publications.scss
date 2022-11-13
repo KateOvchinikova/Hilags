@@ -17,6 +17,39 @@
 .overflow-container-pub {
   position: relative;
 }
+.button-box {
+  position: relative;
+  width: 260px;
+  margin: 0 auto 20px auto;
+  background: $separator;
+  border-radius: 12px;
+  @media screen and (min-width: 1024px) {
+    margin: 0 auto 40px auto;
+  }
+}
+.toggle-btn {
+  position: relative;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.16;
+
+  color: $main;
+}
+.btn {
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  height: 36px;
+  width: 127px;
+  background: $white;
+  border-radius: 10px;
+  transition: 0.5s;
+}
 .publications-paragraph {
   @extend %links;
   font-weight: 700;
@@ -32,26 +65,26 @@
     display: none;
   }
 }
-.masonry-item {
+.masonry-items {
   margin-bottom: 20px;
+
   @media screen and (min-width: 1024px) {
     margin-bottom: 40px;
   }
 }
-.masonry-item:nth-child(n + 4) {
+.masonry-items:nth-child(n + 6) {
   @media screen and (max-width: 639px) {
     display: none;
   }
 }
-.masonry-item:nth-child(n + 5) {
-  @media screen and (min-width: 640px) and (max-width: 1023px) {
+.masonry-items:nth-child(n + 12) {
+  @media screen and (min-width: 640px) {
     display: none;
   }
 }
-.masonry-item.is-visible {
+.masonry-items.is-visible {
   display: block;
 }
-
 .card {
   background: $white;
   border-radius: 8px;
@@ -123,6 +156,10 @@
     transform: translate(-50%);
   }
 }
+.btn-center.is-active {
+  position: static;
+  transform: none;
+}
 .show-more {
   margin-top: 40px;
   padding: 16px 78px;
@@ -130,4 +167,12 @@
 .show-more :hover,
 .show-more :focus {
   background: $button-hover;
+}
+.show-more-pub {
+  margin-top: 40px;
+  padding: 16px 78px;
+  &:hover,
+  &:focus {
+    background: $button-hover;
+  }
 }
