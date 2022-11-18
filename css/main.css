@@ -827,14 +827,14 @@ h6 {
 .splash {
   padding-top: 138px;
   text-align: center;
-  background-image: url(../../img/p-symbol.svg);
+  background-image: url(../img/p-symbol.svg);
   background-repeat: no-repeat;
   background-position: left calc(50% + 11px) top calc(50% + 87px);
   background-size: 430px;
 }
 @media screen and (min-width: 768px) {
   .splash {
-    background-image: url("../../img/p-symbol.svg"), url("../../img/pattern.svg");
+    background-image: url("../img/p-symbol.svg"), url("../img/pattern.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: left calc(50% + 8px) top calc(50% + 88px), left calc(50% + 6px) top calc(50% + 20px);
   }
